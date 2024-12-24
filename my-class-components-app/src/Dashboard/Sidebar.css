@@ -1,0 +1,38 @@
+/* src/Dashboard/Sidebar.css */
+.sidebar {
+    position: relative;
+    left: 0;
+    width: 250px; /* Set the width of the sidebar */
+    height: calc(100vh - 20px); /* Ensure it takes the full height, minus the header */
+    background-color: #242424;
+    color: white;
+    padding-top: 10px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Light shadow for sidebar */
+  }
+  
+  .sidebar-content {
+    padding: 10px;
+  }
+  
+  .sidebar-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-content li {
+    padding: 15px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-content li:hover {
+    background-color: #444; /* Hover effect */
+  }
+  
+  .sidebar-content li:first-child {
+    border-top: 1px solid #333;
+  }
+  

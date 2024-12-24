@@ -1,0 +1,67 @@
+/* src/DashboardHeader/DashboardHeader.css */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  position: relative; /* Ensure that dropdown is positioned relative to the header */
+  z-index: 10; /* Keep header elements above other content */
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-message {
+  margin-left: 10px;
+}
+
+.dropdown-container {
+  position: relative;
+  z-index: 20; /* Ensure the dropdown has a higher stacking order */
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px; /* Adjusted position from the top */
+  right: 0;
+  background-color: #fff;
+  color: #f32121;
+  border: 1px solid #fd3333;
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 120px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for visibility */
+  display: none; /* Default hidden */
+  visibility: hidden; /* Ensures dropdown is hidden by default */
+}
+
+.dropdown-menu.show {
+  display: block; /* Display the dropdown when toggled */
+  visibility: visible; /* Make sure it's visible */
+}
+
+.dropdown-item {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f4f4f4;
+}

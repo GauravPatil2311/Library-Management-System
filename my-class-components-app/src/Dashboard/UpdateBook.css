@@ -1,0 +1,30 @@
+/* UpdateBook.css */
+
+.update-book-container {
+    margin: 20px;
+  }
+  
+  .update-book-header {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .update-book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .update-book-form input {
+    padding: 8px;
+    margin: 5px;
+  }
+  
+  .update-book-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,154 @@
+/* Existing Table Styles */
+.table-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-issue-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.return-book-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  background-color: #ff002f;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-issue-button:hover, .return-book-button:hover {
+  background-color: #0056b3;
+}
+
+.circulation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.circulation-table th, .circulation-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.circulation-table th {
+  background-color: #f0f0f0;
+}
+
+.circulation-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* Adjust max-width for modal size */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold; /* Ensure labels are bold */
+  color: #333; /* Make label text darker for better visibility */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px; /* Ensure text inside inputs is readable */
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions button[type="button"] {
+  background-color: #dc3545;
+}
+
+.form-actions button:hover {
+  background-color: #0056b3;
+}
+
+.form-actions button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Styles (Optional) */
+@media (max-width: 768px) {
+  .table-container {
+    padding: 10px;
+  }
+
+  .table-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .circulation-table {
+    font-size: 12px;
+  }
+}

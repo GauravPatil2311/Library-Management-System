@@ -1,0 +1,38 @@
+/* my-class-components-app/src/Dashboard/Dashboard.css */
+.dashboard {
+    display: flex;
+    flex-direction: column; /* Header at the top, body below */
+    height: 100vh;
+  }
+  
+  .dashboard-header {
+    flex-shrink: 0; /* Prevents the header from shrinking */
+  }
+  
+  .dashboard-body {
+    display: flex;
+    flex: 1;
+    gap: 20px; /* Space between Sidebar and main content */
+  }
+  
+  .sidebar {
+    width: 250px; /* Sidebar width */
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px; /* Space between Cards and Table */
+    padding: 20px;
+  }
+  
+  /* Additional styling for Cards and Table */
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
